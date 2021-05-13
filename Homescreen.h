@@ -1,5 +1,6 @@
 #pragma once
 #include "MyForm.h"
+#include "Notes23.h"
 
 namespace GUIPROJECTCALCULATOR {
 
@@ -9,6 +10,7 @@ namespace GUIPROJECTCALCULATOR {
 	using namespace System::Windows::Forms;
 	using namespace System::Data;
 	using namespace System::Drawing;
+	
 
 	/// <summary>
 	/// Summary for Homescreen
@@ -91,6 +93,7 @@ namespace GUIPROJECTCALCULATOR {
 			this->button3->Size = System::Drawing::Size(61, 63);
 			this->button3->TabIndex = 3;
 			this->button3->UseVisualStyleBackColor = true;
+			this->button3->Click += gcnew System::EventHandler(this, &Homescreen::button3_Click);
 			// 
 			// button4
 			// 
@@ -125,12 +128,21 @@ namespace GUIPROJECTCALCULATOR {
 
 		}
 #pragma endregion
+	
 	private: System::Void button1_Click(System::Object^ sender, System::EventArgs^ e) {
 
 		this->Hide();
-		MyForm^ f6 = gcnew MyForm;
-		f6->ShowDialog();
+		MyForm^ f2 = gcnew MyForm;
+		f2->ShowDialog();
 		
+
 	}
+private: System::Void button3_Click(System::Object^ sender, System::EventArgs^ e) {
+
+		this->Hide();
+		Notes
+
+
+}
 };
 }
